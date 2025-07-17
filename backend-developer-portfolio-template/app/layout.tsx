@@ -13,39 +13,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '[Your Name] - Backend Developer',
+	title: 'Progyan Gupta – Computer Vision Developer',
 	description:
-		'Welcome to my portfolio! I am a passionate backend developer specializing in building scalable server architectures, robust APIs, and high-performance distributed systems. With expertise in cloud infrastructure and database optimization, I create efficient and reliable backend solutions.',
+		"Welcome to my portfolio! I'm Progyan Gupta, a software developer specializing in computer vision, AI, and real-time video analytics. I build scalable, low-latency streaming solutions with a focus on system reliability, performance, and deployment automation.",
 	keywords: [
-		'Backend Developer',
-		'Software Engineer',
-		'System Architecture',
-		'API Development',
-		'Database Design',
-		'Cloud Computing',
-		'Microservices',
-		'DevOps',
-		'[Your Name]',
-		'Node.js',
-		'Python',
-		'Java',
+		'Computer Vision',
+		'Software Developer',
+		'AI Engineer',
+		'Video Analytics',
+		'Real-Time Inference',
 		'Distributed Systems',
-		'System Design',
-		'Backend Architecture',
+		'RTSP',
+		'NVIDIA DeepStream',
+		'Triton Inference Server',
+		'Kafka',
+		'GStreamer',
+		'Backend Developer',
+		'CI/CD',
+		'Docker',
+		'Progyan Gupta',
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Progyan Gupta' }],
+	creator: 'Progyan Gupta',
 	openGraph: {
-		title: '[Your Name] - Backend Developer Portfolio',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
-		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		title: 'Progyan Gupta – Computer Vision Developer',
+		description:
+			"Explore the portfolio of Progyan Gupta, a backend and computer vision developer focused on real-time AI solutions. Learn more about his experience with DeepStream, Kafka, Triton, and scalable infrastructure.",
+		url: 'https://your-domain.com', // <- Replace with actual domain
+		siteName: 'Progyan Gupta Portfolio',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: '/og-image.jpg', // <- Add a real OG image later
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Backend Developer Portfolio',
+				alt: 'Progyan Gupta – Computer Vision Developer',
 			},
 		],
 		locale: 'en_US',
@@ -53,9 +54,10 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - Backend Developer',
-		description: 'Passionate backend developer crafting scalable and efficient server architectures. Explore my projects and technical expertise.',
-		creator: '@yourusername',
+		title: 'Progyan Gupta – Computer Vision Developer',
+		description:
+			"Explore the projects and skills of Progyan Gupta – expert in scalable AI, DeepStream, and video analytics pipelines.",
+		creator: '@yourusername', // <- Optional: Replace with real Twitter
 		images: ['/og-image.jpg'],
 	},
 	robots: {
@@ -78,7 +80,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+				{children}
+			</body>
 		</html>
 	);
 }
