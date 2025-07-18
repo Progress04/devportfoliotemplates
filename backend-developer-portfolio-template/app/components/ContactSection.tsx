@@ -27,9 +27,13 @@ export default function ContactSection() {
 						</div>
 
 						<div className="font-mono">
-							<p className="text-green-500 mb-2">$ contact --info</p>
+							<p className="text-green-500 mb-2">progyan@localhost:~$
+								<span className="text-white"> cat connect.txt</span>
+							</p>
 							<h2 className="text-3xl font-bold mb-8 text-gray-200">Let&apos;s Connect</h2>
-							<p className="text-green-500 mb-2">$ location --current</p>
+							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
+								<span className="text-white"> location --current</span>
+							</p>
 							<div className="flex items-center gap-2 text-gray-300">
 								<svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path
@@ -40,17 +44,21 @@ export default function ContactSection() {
 									/>
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
 								</svg>
-								<span>San Francisco, CA</span>
+								<span>Melbourne, AUS</span>
 							</div>
-							<p className="text-green-500 mt-8 mb-2">$ contact --email</p>
+							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
+								<span className="text-white"> contact --email</span>
+							</p>
 							<motion.a
-								href="mailto:alex.chen@example.com"
+								href="mailto:contact@progyan.dev"
 								whileHover={{ scale: 1.02 }}
 								className="inline-block px-6 py-3 bg-green-500/10 text-green-400 rounded-lg border border-green-500/20 hover:bg-green-500/20 transition-colors"
 							>
-								alex.chen@example.com
+								contact@progyan.dev
 							</motion.a>
-							<p className="text-green-500 mt-8 mb-2">$ cat resume.pdf</p>
+							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
+								<span className="text-white"> cat resume.pdf</span>
+							</p>
 							<motion.a
 								href="/path-to-resume.pdf"
 								target="_blank"
@@ -63,7 +71,9 @@ export default function ContactSection() {
 								</svg>
 								<span>Download Resume</span>
 							</motion.a>
-							<p className="text-green-500 mt-8 mb-4">$ ls ./social-links</p>
+							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
+								<span className="text-white"> ls ./social-links</span>
+							</p>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 								<motion.a
 									href="#"
