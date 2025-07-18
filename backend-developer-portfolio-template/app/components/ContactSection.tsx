@@ -14,11 +14,18 @@ export default function ContactSection() {
 				>
 					<div className="absolute inset-0 bg-gradient-to-r from-green-500/5 to-blue-500/5" />
 					<div className="relative z-10">
-						<div className="flex items-center gap-2 mb-6">
-							<div className="w-3 h-3 rounded-full bg-red-500" />
-							<div className="w-3 h-3 rounded-full bg-yellow-500" />
-							<div className="w-3 h-3 rounded-full bg-green-500" />
+						<div className="flex items-center justify-end space-x-1 text-white text-lg mb-6">
+							<button title="Minimize" className="w-8 h-6 flex items-center justify-center hover:bg-white/10 rounded">
+								&#x2212;
+							</button>
+							<button title="Maximize" className="w-8 h-6 flex items-center justify-center hover:bg-white/10 rounded">
+								&#x2610;
+							</button>
+							<button title="Close" className="w-8 h-6 flex items-center justify-center hover:bg-white/10 rounded">
+								&#x2715;
+							</button>
 						</div>
+
 						<div className="font-mono">
 							<p className="text-green-500 mb-2">$ contact --info</p>
 							<h2 className="text-3xl font-bold mb-8 text-gray-200">Let&apos;s Connect</h2>
