@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import NavBar from './components/NavBar';
+import ClientWrapper from './ClientWrapper';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -40,11 +40,11 @@ export const metadata: Metadata = {
 		title: 'Progyan Gupta – Computer Vision Developer',
 		description:
 			"Explore the portfolio of Progyan Gupta, a backend and computer vision developer focused on real-time AI solutions. Learn more about his experience with DeepStream, Kafka, Triton, and scalable infrastructure.",
-		url: 'https://your-domain.com', // <- Replace with actual domain
+		url: 'https://your-domain.com',
 		siteName: 'Progyan Gupta Portfolio',
 		images: [
 			{
-				url: '/og-image.jpg', // <- Add a real OG image later
+				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
 				alt: 'Progyan Gupta – Computer Vision Developer',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
 		title: 'Progyan Gupta – Computer Vision Developer',
 		description:
 			"Explore the projects and skills of Progyan Gupta – expert in scalable AI, DeepStream, and video analytics pipelines.",
-		creator: '@yourusername', // <- Optional: Replace with real Twitter
+		creator: '@yourusername',
 		images: ['/og-image.jpg'],
 	},
 	robots: {
@@ -74,17 +74,10 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({
-	children,
-}: Readonly<{
-	children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en">
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<NavBar />
-				{children}
-			</body>
+		<html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+			<ClientWrapper>{children}</ClientWrapper>
 		</html>
 	);
 }
