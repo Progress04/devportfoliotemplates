@@ -76,7 +76,7 @@ export default function ContactSection() {
 							</p>
 							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 								<motion.a
-									href="#"
+									href="https://github.com/Progress04"
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -87,11 +87,11 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">GitHub</p>
-										<p className="text-sm text-gray-400">@alexchen</p>
+										<p className="text-sm text-gray-400">@Progress04</p>
 									</div>
 								</motion.a>
 								<motion.a
-									href="#"
+									href="https://www.linkedin.com/in/progyangupta/"
 									whileHover={{ scale: 1.05 }}
 									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
 								>
@@ -102,25 +102,53 @@ export default function ContactSection() {
 									</div>
 									<div>
 										<p className="font-semibold text-gray-200">LinkedIn</p>
-										<p className="text-sm text-gray-400">Alex Chen</p>
-									</div>
-								</motion.a>
-								<motion.a
-									href="#"
-									whileHover={{ scale: 1.05 }}
-									className="flex items-center gap-3 px-4 py-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-colors border border-gray-700/50 group"
-								>
-									<div className="p-2 bg-gray-700/50 rounded-lg group-hover:bg-gray-600/50 transition-colors">
-										<svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 24 24">
-											<path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-										</svg>
-									</div>
-									<div>
-										<p className="font-semibold text-gray-200">X</p>
-										<p className="text-sm text-gray-400">@alexchen</p>
+										<p className="text-sm text-gray-400">Progyan Gupta</p>
 									</div>
 								</motion.a>
 							</div>
+							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
+							<span className="text-white"> nano contact-form.txt</span>
+							</p>
+							<p className="text-white-300 mb-6"> We all build, learn, and grow — sometimes better together. If our paths align, let’s talk.</p>
+							<form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+							<div>
+								<label className="block text-sm text-gray-400 font-mono mb-1" htmlFor="name">Name</label>
+								<input
+								id="name"
+								type="text"
+								className="w-full px-4 py-2 bg-black/30 text-white border border-gray-700 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+								placeholder="Your name"
+								required
+								/>
+							</div>
+							<div>
+								<label className="block text-sm text-gray-400 font-mono mb-1" htmlFor="email">Email</label>
+								<input
+								id="email"
+								type="email"
+								className="w-full px-4 py-2 bg-black/30 text-white border border-gray-700 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+								placeholder="you@example.com"
+								required
+								/>
+							</div>
+							<div>
+								<label className="block text-sm text-gray-400 font-mono mb-1" htmlFor="message">Message</label>
+								<textarea
+								id="message"
+								rows={5}
+								className="w-full px-4 py-2 bg-black/30 text-white border border-gray-700 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
+								placeholder="Your message"
+								required
+								/>
+							</div>
+							<motion.button
+								whileHover={{ scale: 1.03 }}
+								type="submit"
+								className="inline-block px-6 py-2 bg-green-500/10 text-green-400 border border-green-500/20 rounded-lg hover:bg-green-500/20 transition-colors font-mono"
+							>
+								Send Message
+							</motion.button>
+							</form>
 						</div>
 					</div>
 				</motion.div>

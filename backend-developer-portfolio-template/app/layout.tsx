@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Space_Grotesk, Inter, IBM_Plex_Mono } from 'next/font/google';
+import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import ClientWrapper from './ClientWrapper';
 
@@ -11,19 +11,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
 	subsets: ['latin'],
-});
-
-const spaceGrotesk = Space_Grotesk({
-	variable: '--font-space-grotesk',
-	subsets: ['latin'],
-	weight: ['400', '500', '700'],
-	display: 'swap',
-});
-
-const inter = Inter({
-	variable: '--font-inter',
-	subsets: ['latin'],
-	display: 'swap',
 });
 
 
