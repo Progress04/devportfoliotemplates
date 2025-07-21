@@ -57,7 +57,7 @@ export default function WorkExperience() {
 				<motion.h2
 					initial={{ opacity: 0, y: 20 }}
 					whileInView={{ opacity: 1, y: 0 }}
-					viewport={{ once: true }}
+					viewport={{ once: false }}
 					transition={{ duration: 0.6 }}
 					className="text-4xl font-bold text-center mb-20 tracking-tight text-white"
 				>
@@ -71,7 +71,7 @@ export default function WorkExperience() {
 							key={index}
 							initial={{ opacity: 0, y: 30 }}
 							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true, amount: 0.2 }}
+							viewport={{ once: false, amount: 0.2 }}
 							transition={{ duration: 0.5, delay: index * 0.1 }}
 							className="relative rounded-2xl p-6"
 						>

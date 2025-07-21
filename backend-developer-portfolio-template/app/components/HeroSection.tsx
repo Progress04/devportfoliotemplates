@@ -29,13 +29,13 @@ export default function HeroSection() {
 						<p className="text-green-400">
 							progyan@localhost:~$ <span className="text-white">whoami</span>
 						</p>
-						<h1 className="text-5xl md:text-6xl font-bold mt-3 mb-4 text-white tracking-tight">
+						<h1 className="md:text-6xl mt-3 mb-4 text-white tracking-tight">
 							Progyan Gupta
 						</h1>
 						<p className="text-green-400 text-md md:text-lg uppercase tracking-wide font-semibold mb-2">
 							Software Developer – Computer Vision & AI
 						</p>
-						<p className="text-gray-200 text-md md:text-lg leading-relaxed max-w-3xl">
+						<p className="text-gray-200 text-md md:text-lg leading-relaxed max-w-4xl">
 							Software Developer focused on AI and real-time video analytics, with additional experience
 							in NLP and deploying machine learning models. Experienced in delivering scalable,
 							low-latency streaming solutions with high system reliability, supported by streamlined

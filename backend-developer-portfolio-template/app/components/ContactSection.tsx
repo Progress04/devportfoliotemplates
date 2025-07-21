@@ -60,7 +60,7 @@ export default function ContactSection() {
 								<span className="text-white"> cat resume.pdf</span>
 							</p>
 							<motion.a
-								href="/path-to-resume.pdf"
+								href="/resume/Progyan_Gupta_Resume.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 								whileHover={{ scale: 1.02 }}
