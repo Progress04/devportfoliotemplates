@@ -51,13 +51,17 @@ export default function HeroSection() {
 						<div className="flex flex-wrap gap-3 mt-3">
 							{[
 								'Python',
-								'Node.js',
 								'GStreamer',
 								'DeepStream',
 								'Kafka',
 								'Triton',
+								'Pytorch',
+								'R',
+								'GoLang',
 								'Docker',
 								'Azure',
+								'CICD',
+
 							].map((skill) => (
 								<span
 									key={skill}
