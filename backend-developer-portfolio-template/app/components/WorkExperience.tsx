@@ -6,7 +6,7 @@ export default function WorkExperience() {
 	const jobs = [
 		{
 			title: 'Software Developer – Computer Vision',
-			duration: 'Mar 2023 – Present · Melbourne, AU',
+			duration: 'Nov 2022 – Present · Melbourne, AU',
 			description:
 				'Developing real-time video analytics pipelines using DeepStream, Kafka, and Triton for scalable, low-latency AI applications.',
 			details: [
@@ -19,6 +19,7 @@ export default function WorkExperience() {
 			tech: [
 				'DeepStream',
 				'NVIDIA Triton',
+				'Cuda',
 				'Kafka',
 				'Kafka Connect',
 				'CI/CD',
@@ -31,10 +32,10 @@ export default function WorkExperience() {
 			title: 'Data Science Intern – NLP',
 			duration: 'Jan 2021 – Feb 2021 · Remote',
 			description:
-				'Built an NLP model for sentiment analysis and benchmarked state-of-the-art transfer learning architectures.',
+				'Applied transfer learning to fine-tune state-of-the-art NLP architectures for sentiment analysis, and benchmarked their performance',
 			details: [
 				'Deployed a transformer-based model using Hugging Face for customer feedback classification',
-				'Benchmarked multiple pre-trained models including BERT and XLNet for optimal performance',
+				'Benchmarked multiple pre-trained models such as BERT, RoBERTa, and XLNet for optimal performance',
 				'Streamlined deployment workflows for scalability using open-source NLP APIs',
 				'Gained practical experience in production-ready model evaluation and end-to-end machine learning deployment',
 			],
@@ -42,6 +43,7 @@ export default function WorkExperience() {
 				'Hugging Face',
 				'Transformers',
 				'BERT',
+				'RoBERTa',
 				'XLNet',
 				'Python',
 				'Scikit-learn',

@@ -30,8 +30,9 @@ export default function ContactSection() {
 							<p className="text-green-500 mb-2">progyan@localhost:~$
 								<span className="text-white"> cat connect.txt</span>
 							</p>
-							<h2 className="text-3xl font-bold mb-8 text-gray-200">Let&apos;s Connect</h2>
-							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
+							<h2 className="text-3xl font-bold text-gray-200">Let&apos;s Connect</h2>
+							<p className="text-white-300"> We all build, learn, and grow — sometimes better together. If our paths align, let’s talk.</p>
+							<p className="text-green-500 mt-4 mb-4">progyan@localhost:~$
 								<span className="text-white"> location --current</span>
 							</p>
 							<div className="flex items-center gap-2 text-gray-300">
@@ -106,49 +107,6 @@ export default function ContactSection() {
 									</div>
 								</motion.a>
 							</div>
-							<p className="text-green-500 mt-8 mb-4">progyan@localhost:~$
-							<span className="text-white"> nano contact-form.txt</span>
-							</p>
-							<p className="text-white-300 mb-6"> We all build, learn, and grow — sometimes better together. If our paths align, let’s talk.</p>
-							<form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-							<div>
-								<label className="block text-sm text-gray-400 font-mono mb-1" htmlFor="name">Name</label>
-								<input
-								id="name"
-								type="text"
-								className="w-full px-4 py-2 bg-black/30 text-white border border-gray-700 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
-								placeholder="Your name"
-								required
-								/>
-							</div>
-							<div>
-								<label className="block text-sm text-gray-400 font-mono mb-1" htmlFor="email">Email</label>
-								<input
-								id="email"
-								type="email"
-								className="w-full px-4 py-2 bg-black/30 text-white border border-gray-700 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
-								placeholder="you@example.com"
-								required
-								/>
-							</div>
-							<div>
-								<label className="block text-sm text-gray-400 font-mono mb-1" htmlFor="message">Message</label>
-								<textarea
-								id="message"
-								rows={5}
-								className="w-full px-4 py-2 bg-black/30 text-white border border-gray-700 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500"
-								placeholder="Your message"
-								required
-								/>
-							</div>
-							<motion.button
-								whileHover={{ scale: 1.03 }}
-								type="submit"
-								className="inline-block px-6 py-2 bg-green-500/10 text-green-400 border border-green-500/20 rounded-lg hover:bg-green-500/20 transition-colors font-mono"
-							>
-								Send Message
-							</motion.button>
-							</form>
 						</div>
 					</div>
 				</motion.div>
